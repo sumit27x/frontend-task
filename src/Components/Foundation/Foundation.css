@@ -1,0 +1,33 @@
+.foundation {
+    /* background: url("./../../Assets/cube-bg.jpg") no-repeat; */
+    /* background: url("https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg") no-repeat; */
+    background-size: cover;
+    background-image: url("../../Assets/Rectangle 44.png");
+    color: white;
+    width: 100%;
+    /* height: auto; */
+    padding-top: 100px;
+    background-color:#194F8D ;
+}
+
+
+
+.foundation-row{
+    display: flex;
+    padding: 100px 0px;
+    gap: 70px;
+}
+
+.foundation-cards{
+    display: flex;
+    gap: 20px;
+}
+
+.foundation-cards img{
+    width: 100px ;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 4px solid white;
+
+}

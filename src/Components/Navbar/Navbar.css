@@ -1,0 +1,90 @@
+.green-color{
+    background-color: #15918E;
+    padding: 10px;
+}
+
+.nav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #15918E;
+}
+.search-icon {
+    font-size: 20px;
+}
+.nav-search input{
+    border: none;
+    outline: none;
+}
+
+.nav-logo img{
+    width: 150px;
+}
+
+.nav-contact button{
+    background-color: white;
+    color: #15918E;
+}
+/* ============================================= Navbar Menu========================================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #15918E;
+}
+
+.nav-item.active {
+    color: #15918E;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 0px;
+    border-left: 0px solid transparent;
+    border-right: 29px solid transparent;
+    /* border-right: 35px solid transparent; */
+    /* border-top: 10px solid #15918E; */
+    border-top: 30px solid white;
+}
+
+/* Arrow at the bottom */
+/* .nav-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #15918E; 
+} */
+
+
