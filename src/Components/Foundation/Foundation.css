@@ -17,6 +17,7 @@
 .foundation-cards {
   display: flex;
   gap: 20px;
+    width: 100%;
 }
 
 .foundation-cards img {
