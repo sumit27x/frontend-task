@@ -1,33 +1,62 @@
 .foundation {
-    /* background: url("./../../Assets/cube-bg.jpg") no-repeat; */
-    /* background: url("https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg") no-repeat; */
-    background-size: cover;
-    background-image: url("../../Assets/Rectangle 44.png");
-    color: white;
-    width: 100%;
-    /* height: auto; */
-    padding-top: 100px;
-    background-color:#194F8D ;
+  background-size: cover;
+  background-image: url("../../Assets/Rectangle 44.png");
+  color: white;
+  width: 100%;
+  padding-top: 100px;
+  background-color: #0e048f;
 }
 
-
-
-.foundation-row{
-    display: flex;
-    padding: 100px 0px;
-    gap: 70px;
+.foundation-row {
+  display: flex;
+  padding: 100px 0px;
+  gap: 70px;
+  width: 100%;
 }
 
-.foundation-cards{
-    display: flex;
-    gap: 20px;
+.foundation-cards {
+  display: flex;
+  gap: 20px;
 }
 
-.foundation-cards img{
-    width: 100px ;
-    height: 100px;
-    border-radius: 50%;
+.foundation-cards img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 4px solid white;
+}
+
+@media screen and (max-width: 992px) {
+  .foundation {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .foundation-row {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+  .foundation-cards img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
     object-fit: contain;
-    border: 4px solid white;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .foundation-row {
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .foundation-cards {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
 }

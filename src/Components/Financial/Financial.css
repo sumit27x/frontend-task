@@ -1,0 +1,99 @@
+.financial {
+  position: relative;
+  background: url("../../Assets/fluent_arrow-growth-24-regular.png") no-repeat
+    bottom left;
+  background-position: bottom left;
+}
+
+.fitImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.sticky-content-box {
+  position: absolute;
+  bottom: 0;
+  background-color: #194f8d;
+  color: #fff;
+  padding: 35px;
+  width: max-content;
+  text-align: center;
+  text-transform: capitalize;
+}
+.sticky-content-box h1 {
+  font-weight: 800;
+}
+
+.sticky-content-box.stickLeft {
+  left: auto;
+  right: auto;
+  z-index: 2;
+}
+
+.sticky-content-box::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 85%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0px;
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #194f8d;
+}
+
+@media (min-width: 768px) {
+  .sticky-content-box.stickLeft {
+    right: 100%;
+  }
+}
+
+.financial-card {
+  width: 50%;
+  flex: "0 0 auto";
+}
+.financial-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+/* ======================================================================================================= */
+@media screen and (min-width: 993px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+/* for laptop device*/
+@media screen and (max-width: 768px) {
+  .financial-card {
+    width: 100%;
+    flex: "0 0 auto";
+  }
+  .financial-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+}
+
+/* for small device*/
+@media screen and (max-width: 576px) {
+  .financial-card {
+    width: 100%;
+  }
+  .sticky-content-box {
+    padding: 20px;
+  }
+}
+
+/* for small device*/
+@media screen and (max-width: 350px) {
+  .sticky-content-box {
+    padding: 10px;
+  }
+}

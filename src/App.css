@@ -1,16 +1,19 @@
-/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "PT Serif", serif;
+  /* font-family: "PT Serif", serif; */
+  font-family: "Poppins", serif;
+  /* font-family: "Montserrat", serif; */
   text-decoration: none;
   list-style: none;
-
 }
 ::-webkit-scrollbar{
   width: 5px;
@@ -25,72 +28,194 @@ body{
   background-color: white;
 }
 
+h1{
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+h2{
+  /* font-size: ; */
+}
+
+
+p{
+  line-height: 22px;
+}
+
+.page-container {
+  overflow-x: hidden !important;
+}
+.full-container{
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0px;
+}
 .container {
-  /* max-width: 968px; */
   position: relative;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.full-container{
-  position: relative;
-  overflow: hidden;
+.main-content{
+  padding: 50px 0px;
+  display: flex;
+  gap: 20px;
 }
 
-
+.row{
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+.left{
+  width: 15%;
+}
+.right{
+  width: 85%;
+}
+.heading{
+  max-width: 50vw;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+.heading-p{
+  max-width: 70%;
+}
 .small-heading{
-  color: #14b8a6;
+  color: #194f8d;
   font-weight: bold;
-  font-size: 20px;
-  /* margin-bottom: 10px; */
+  text-transform: capitalize;
+  margin-top: 1vw;
 }
 
 .highlight{
-  color: #15918E;
+  color: #15928e;
+}
+
+.btn{
+  margin: 20px 0px;
+}
+
+button{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border: 1px solid #15928e;
+  background-color: #15928e;
+  color: white;
+}
+
+
+.background-box {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 85%;
+  height: 85%;
+  bottom: 100px;
+  background-color: #15928e; 
+  z-index: -1;
 }
 
 .background-text {
   position: absolute;
-  top: 50%;
-  right: -200px;
+  top: 100px;
+  right: -5%;
   font-size: 6rem;
   font-weight: bold;
   color: rgba(243, 244, 246, 1);
   transform: translateY(-50%);
   z-index: 0;
   pointer-events: none;
+  text-transform: capitalize;
 }
 
-.page-container {
-  overflow-x: hidden !important;
+.card{
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
-
-button{
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border: 1px solid #15918E;
-  background-color: #15918E;
-  color: white;
+.card-content{
+  padding: 20px ;
+  background-color: white;
+  /* border: 1px solid #008080; */
+  border: 1px solid #15928e;
 }
-
+.card-content p{
+  max-width: 65%;
+}
+.nopadding{
+  width: 118%;
+  margin-top: -2vw;
+}
 
 /* ======================================================================================================= */
 
 @media screen and (max-width: 992px) {
   .container {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
+  .nopadding{
+    width: 118%;
+  }
+  .row{
+  column-gap: 20px;
+  }
+
+  .background-text{
+    font-size: 4rem;
+  }
+  .left{
+    width: 25%;
+  }
+  .right{
+    width: 70%;
+  }
+  .heading{
+    max-width: 100vw;
+  }
+  .heading-p{
+    max-width: 100%;
+  }
+
 }
 
 /* for laptop device*/
 @media screen and (max-width: 768px) {
   .container{
-    margin-left: 1rem;
-    margin-right:1rem ;
+    margin-left: 2rem;
+    margin-right:2rem ;
+  }
+  h1{
+    font-size: 2.5rem;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+  .background-text{
+    top: 70px;
+  }
+  .nopadding{
+    /* width: 105%; */
+    width: 100%;
+  }
+  .row{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .heading{
+    max-width: 100vw;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
   }
   
 }
@@ -101,6 +226,26 @@ button{
     margin-left: 1rem;
     margin-right: 1rem ;
   }
+  .full-container {
+    padding: 20px 0px;
+  }
+  .nopadding{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .background-text {
+    right: -15%;
+    font-size: 3rem;
+    top: 40px;
+  }
+  p{
+    font-size: 14px;
+  }
   
 }
 
@@ -109,5 +254,11 @@ button{
   .conatiner{
     margin-left: 1rem;
     margin-right:1rem ;
+  }
+
+  h1{
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
 }

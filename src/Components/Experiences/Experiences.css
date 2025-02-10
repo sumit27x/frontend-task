@@ -1,0 +1,163 @@
+.experience {
+  position: relative;
+  background: url("../../Assets/ph_plant (1).png") no-repeat bottom left;
+  background-position: bottom left;
+  background-position-y: 130%;
+  padding: 50px 0px;
+}
+.left-content {
+  width: 15%;
+  padding: 100px 0px;
+}
+.middle-content {
+  width: 45%;
+  padding: 100px 0px;
+}
+.right-content {
+  width: 40%;
+}
+
+.slider {
+  position: relative;
+}
+
+.floatImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.floatImg {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -10%;
+  margin-right: -18%;
+  height: 300px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  background-color: #194f8d;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experience-icon {
+  font-size: 20px;
+}
+.experience-row {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+
+@media (min-width: 992px) {
+  /* .floatImg {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: -10%;
+       margin-right: -18%;
+       height: 100%;
+       display: block;
+   } */
+}
+
+@media (min-width: 768px) {
+  .floatImg {
+    height: 440px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .floatImg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -20%;
+    margin-right: -18%;
+    height: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .experience {
+    background-position-y: 100%;
+  }
+  .row {
+    display: flex;
+    width: 100%;
+  }
+  .experience-row {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+  }
+  .left-content {
+    width: 25%;
+    flex: 0 0 auto;
+    padding: 0px;
+  }
+  .middle-content {
+    width: 70%;
+    flex: 0 0 auto;
+    padding: 0px;
+  }
+  .right-content {
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .floatImg {
+    /* position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100;
+        margin-right: -18%;
+        right: -10%;
+        height: 400px;
+        width: 400px;
+        display: block; */
+
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-right: -15%;
+    display: block;
+    height: 400px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .experience-row {
+    row-gap: 20px;
+  }
+  .left-content {
+    width: 100%;
+  }
+  .middle-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .right-content {
+    margin-top: 0px;
+  }
+  .experience {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 350px) {
+}

@@ -1,0 +1,31 @@
+.business-row {
+  padding: 60px 0px;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .card-content p {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .business-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .main-card {
+    width: 100%;
+  }
+  .card-content p {
+    max-width: 100%;
+  }
+}

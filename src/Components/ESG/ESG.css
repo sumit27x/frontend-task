@@ -1,65 +1,14 @@
-.title {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  
-  .title p {
-    width: 15%; /* Fixed width */
-    margin-bottom: 0; /* Prevent extra spacing */
-  }
-  
-  .title h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #333;
-    flex: 1; /* Allows h1 to take remaining space */
-  }
-  
-  .title-bottom {
-    display: flex;
-    /* gap: 40px; */
-    align-items: flex-start;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    margin-left: 20%;
-    margin-right: 5%;
-  }
-  
-  .title-left {
-    position: relative;
-    max-width: 50%;
-  }
-  
-  .title-left img {
-    width: 100%;
-    display: block;
-  }
-  
-  .title-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 50%;
-  }
-  
-  .title-content {
-    padding: 0px 0px 40px 40px;
-  }
-  
-
-  .esg {
+.esg {
     position: relative;
     background: url("../../Assets/ph_plant.png") no-repeat bottom right;
-    /* background-size: contain; */
     background-position: bottom right;
-    background-position-x: 100%;
-    background-position-y: 140%;
     padding: 50px 0px;
   }
   
+  @media screen and (max-width: 992px) {
+
+  .business-row .card {
+    width: 100%;
+  }
+
+}

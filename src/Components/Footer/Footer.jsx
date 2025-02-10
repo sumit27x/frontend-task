@@ -23,7 +23,7 @@ const Footer = () => {
           "Business Updates"
       ];
   return (
-    <div>
+    <div className='footer'>
       <div className='container'>
         <div className='footer-top'>
           <img src={Logo} alt="Mindspace" srcset="" className='footer-logo'/>
