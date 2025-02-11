@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend-task/static/css/main.4062ed38.css",
+    "main.css": "/frontend-task/static/css/main.693f7c66.css",
     "main.js": "/frontend-task/static/js/main.01af6b17.js",
     "static/media/Mask group.png": "/frontend-task/static/media/Mask group.77f972e968c5736e183c.png",
     "static/media/Rectangle 44.png": "/frontend-task/static/media/Rectangle 44.912de5457ea72c61eb35.png",
@@ -19,11 +19,11 @@
     "static/media/Mask group (12).png": "/frontend-task/static/media/Mask group (12).9d8105893cc7cafe3a0d.png",
     "static/media/Mask group (8).png": "/frontend-task/static/media/Mask group (8).2a09322a3da384e9b891.png",
     "index.html": "/frontend-task/index.html",
-    "main.4062ed38.css.map": "/frontend-task/static/css/main.4062ed38.css.map",
+    "main.693f7c66.css.map": "/frontend-task/static/css/main.693f7c66.css.map",
     "main.01af6b17.js.map": "/frontend-task/static/js/main.01af6b17.js.map"
   },
   "entrypoints": [
-    "static/css/main.4062ed38.css",
+    "static/css/main.693f7c66.css",
     "static/js/main.01af6b17.js"
   ]
 }
