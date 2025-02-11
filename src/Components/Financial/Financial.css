@@ -45,7 +45,7 @@
   border-top: 25px solid #194f8d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .sticky-content-box.stickLeft {
     right: 100%;
   }

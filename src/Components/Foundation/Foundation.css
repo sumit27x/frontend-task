@@ -1,10 +1,24 @@
 .foundation {
-  background-size: cover;
+  /* background-size: cover;
   background-image: url("../../Assets/Rectangle 44.png");
   color: white;
   width: 100%;
   padding-top: 100px;
-  background-color: #0e048f;
+  background-color: #194F8D; */
+
+
+
+    background-size: cover;
+    background-image: url("../../Assets/Rectangle 44.png");
+    background-color: #194F8D; 
+    color: white;
+    width: 100%;
+    padding-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply; 
+
+  
 }
 
 .foundation-row {

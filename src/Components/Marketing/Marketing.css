@@ -83,6 +83,11 @@
 }
 
 @media screen and (max-width: 576px) {
+  .marketing-nopadding {
+    /* width: 105%; */
+    /* width: 100%; */
+    margin-right: 0%;
+  }
   .marketing-grid {
     display: grid;
     grid-template-columns: 1fr;
